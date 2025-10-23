@@ -4,53 +4,53 @@
 🎯 Features
 🧍‍♀️ User Section
 
-Choose the number of questions: 10, 20, 30, or 40
+- Choose the number of questions: 10, 20, 30, or 40
 
-Randomized question selection from the database
+- Randomized question selection from the database
 
-All questions are displayed on one page
+- All questions are displayed on one page
 
-Each question has four answer options with only one correct
+- Each question has four answer options with only one correct
 
-Each question can include an image
+- Each question can include an image
 
-When a user selects an answer, the question changes color (visual feedback)
+- When a user selects an answer, the question changes color (visual feedback)
 
-After clicking the “Check” button, the user sees:
+- After clicking the “Check” button, the user sees:
 
-their chosen answers
+      - their chosen answers
 
-the correct answers
+      - the correct answers
 
-When choosing 40 questions, a 1-hour timer starts
+- When choosing 40 questions, a 1-hour timer starts
 
-When time runs out, the test automatically ends
+      - When time runs out, the test automatically ends
 
-A final score is shown after completing the test
+- A final score is shown after completing the test
 
 ⚙️ Administrative Section (Admin Panel)
 
-Access via login with authentication
+- Access via login with authentication
 
-Functions:
+- Functions:
 
-Add new questions (with image upload)
+      - Add new questions (with image upload)
 
-Edit existing questions
+      - Edit existing questions
 
-Delete questions
+      - Delete questions
 
-All data is stored in a MySQL database
+- All data is stored in a MySQL database
 
 🧩 Technologies Used
 
-PHP
+- PHP
 
-MySQL
+- MySQL
 
-HTML / CSS – minimal, responsive, and readable design
+- HTML / CSS – minimal, responsive, and readable design
 
-JavaScript – timer and interactive logic
+- JavaScript – timer and interactive logic
 
 🗄️ Project Structure
 / (root)
