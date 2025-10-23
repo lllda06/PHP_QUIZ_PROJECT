@@ -1,0 +1,25 @@
+-- schema.sql
+CREATE DATABASE IF NOT EXISTS quizdb CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE quizdb;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE questions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  question_text TEXT NOT NULL,
+  image_path VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE answers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  question_id INT NOT NULL,
+  answer_text VARCHAR(1000) NOT NULL,
+  is_correct TINYINT(1) NOT NULL DEFAULT 0,
+  FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
+);
